@@ -1,0 +1,110 @@
+.footer-page {
+  display: flex;
+  background: $background-footer;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.underground {
+  display: flex;
+}
+
+.invitation {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding-top: 12px;
+  color: $text-color-white;
+  font-family: Roboto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+}
+
+.social-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: $text-color-white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.social-link-footer:hover,
+.social-link-footer:focus {
+  transition: $timing-function;
+  background: $text-color-accent;
+}
+.social-icons {
+  fill: currentColor;
+}
+
+.address-list .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address-list .map {
+  color: #ffffff;
+}
+
+.footer-address {
+  margin-right: 70px;
+}
+.footer-form {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+.footer-box-send {
+  display: flex;
+}
+.btn-send {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-left: 12px;
+  padding: 13px 28px;
+  background: $text-color-accent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  color: $text-color-white;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+.btn-send:hover {
+  transition: transform $timing-function;
+  background-color: #188ce8;
+}
+.send-icon {
+  fill: $text-color-white;
+  margin-left: 10px;
+}
+.footer-box-send input {
+  display: flex;
+  width: 358px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: $background-footer;
+}

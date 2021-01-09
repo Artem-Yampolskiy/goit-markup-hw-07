@@ -1,0 +1,36 @@
+.about {
+  background: $text-color-white;
+}
+.about > .conteiner {
+  padding-top: 94px;
+}
+.about-list {
+  display: flex;
+  justify-content: space-between;
+}
+.about-icons {
+  background-color: $secondary-bg-color;
+  margin-bottom: 30px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-properties {
+  margin-bottom: 10px;
+  width: 270px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $text-color-black;
+}
+.properties {
+  width: 270px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $text-color-grey;
+}
