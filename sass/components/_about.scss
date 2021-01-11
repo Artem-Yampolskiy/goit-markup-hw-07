@@ -19,12 +19,7 @@
 .about-properties {
   margin-bottom: 10px;
   width: 270px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $text-color-black;
+  @include fonts-text($text-color-black);
 }
 .properties {
   width: 270px;

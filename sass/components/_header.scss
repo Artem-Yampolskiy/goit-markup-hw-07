@@ -27,14 +27,7 @@
 }
 .nav-list .link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  color: $text-color-black;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include fonts_padding-header($text-color-black);
 }
 .nav-list .current {
   color: $text-color-accent;
@@ -59,31 +52,20 @@
   display: flex;
   align-items: center;
 }
-
 .address-list-up .item:not(:last-child) {
   margin-right: 30px;
 }
 .address-list-up .link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-.address-list .link,
-.address-list-up .link {
   display: block;
-  color: $text-color-grey;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include fonts_padding-header($text-color-grey);
+  &:hover,
+  &:focus {
+    color: $text-color-accent;
+    transition: $timing-function;
+    font-style: normal;
+  }
 }
-.address-list-up .link:hover,
-.address-list-up .link:focus {
-  color: $text-color-accent;
-  transition: $timing-function;
-  font-style: normal;
-}
+
 .svg-mail,
 .svg-phone {
   padding: 0;

@@ -28,22 +28,10 @@
   text-transform: uppercase;
 }
 .hero-but {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: rgba(255, 255, 255, 1);
   padding: 10px 32px;
-  background-color: $text-color-accent;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-}
-.hero-but:hover {
-  transition: $timing-function;
-  color: $text-color-black;
-  background: #f5f4fa;
-  border: none;
-  border-radius: 4px;
+  @extend %buttons;
+
+  &:hover {
+    @extend %buttons-hover-focus;
+  }
 }
